@@ -85,7 +85,7 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
  - Run `fuzzyLogicDesigner` in the terminal. Two windows should appear in your screen: one named 'Fuzzy Logic Designer: Untitled' and 'Fuzzy Logic Designer: Getting started'.
  - In 'Fuzzy Logic Designer: Getting started', 'Open' section (top left), do a Browse action to select file `.\fuzzy\FIS\certanity.fis`. The file is loaded into the 'Fuzzy Logic Designer: Untitled' window, whose name changes to 'Fuzzy Logic Designer: certanity'
 
- ![Browse](./supplementary_materials/Fuzzy Logic Designer - Getting Started.png)
+ ![Browse](/supplementary_materials/Fuzzy Logic Designer - Getting Started.png)
 
  - In 'Fuzzy Logic Designer: certanity', click on 'Export'(top panel) and then 'Export Fuzzy Inference System to Workspace'.
  
