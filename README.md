@@ -85,7 +85,7 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
  - Run `fuzzyLogicDesigner` in the terminal. Two windows should appear in your screen: one named 'Fuzzy Logic Designer: Untitled' and 'Fuzzy Logic Designer: Getting started'.
  - In 'Fuzzy Logic Designer: Getting started', 'Open' section (top left), do a Browse action to select file `.\fuzzy\FIS\certanity.fis`. The file is loaded into the 'Fuzzy Logic Designer: Untitled' window, whose name changes to 'Fuzzy Logic Designer: certanity'
 
- ![Browse](/supplementary_materials/Fuzzy Logic Designer - Getting Started.png)
+ ![Browse](/supplementary_materials/Fuzzy%20Logic%20Designer%20-%20Getting%20Started.png)
 
  - In 'Fuzzy Logic Designer: certanity', click on 'Export'(top panel) and then 'Export Fuzzy Inference System to Workspace'.
  
@@ -93,7 +93,7 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
 
  - A window appears requesting to select options to be exported. Select 'certanity' and click 'Export'.
 
- ![Select_certanity](./supplementary_materials/Fuzzy Logic Designer - Export Fuzzy Inference Systems to Workspace - Select certanity and Export.png)
+ ![Select_certanity](/supplementary_materials/Fuzzy%20Logic%20Designer%20-%20Export%20Fuzzy%20Inference%20Systems%20to%20Workspace%20-%20Select%20certanity%20and%20Export.png)
 
  - In the Matlab terminal, run the following commands:
  
@@ -109,15 +109,15 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
  - Run `fuzzyLogicDesigner` in the terminal. Two windows should appear in your screen: one named 'Fuzzy Logic Designer: Untitled' and 'Fuzzy Logic Designer: Getting started'.
  - In 'Fuzzy Logic Designer: Getting started', 'Open' section (top left), do a Browse action to select file `.\fuzzy\FIS\measurment_information.fis`. The file is loaded into the 'Fuzzy Logic Designer: Untitled' window, whose name changes to 'Fuzzy Logic Designer: measurment_information'
 
- ![Browse](./supplementary_materials/Fuzzy&Logic&Designer&-&Getting&Started.png)
+ ![Browse](/supplementary_materials/Fuzzy%20Logic%20Designer%20-%20Getting%20Started.png)
 
  - In 'Fuzzy Logic Designer: measurment_information', click on 'Export'(top panel) and then 'Export Fuzzy Inference System to Workspace'.
  
- ![Export](./supplementary_materials/Fuzzy Logic Designer - Export Fuzzy Inference Systems to Workspace.png)
+ ![Export](/supplementary_materials/Fuzzy%20Logic%20Designer%20-%20Export%20Fuzzy%20Inference%20Systems%20to%20Workspace.png)
 
  - A window appears requesting to select options to be exported. Select 'measurment_information' and click 'Export'.
 
- ![Select_measurment_information](./supplementary_materials/Fuzzy Logic Designer - Export Fuzzy Inference Systems to Workspace - Select measurment_information and Export.png) 
+ ![Select_measurment_information](/supplementary_materials/Fuzzy%20Logic%20Designer%20-%20Export%20Fuzzy%20Inference%20Systems%20to%20Workspace%20-%20Select%20measurment_information%20and%20Export.png) 
 
  - In the Matlab terminal, run the following commands:
  
