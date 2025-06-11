@@ -1,13 +1,20 @@
+# CODECHECK certificate 2025-019
+
+Repository for CODECHECK certificate 2025-019.
+
+- Publication: [Fuzzy-Logic-based model predictive control: A paradigm integrating optimal and common-sense decision making](https://doi.org/10.48550/arXiv.2503.21065)
+- Repository: [https://doi.org/10.4121/319168f0-bc62-4051-84c2-f32718c05386.v1](https://doi.org/10.4121/319168f0-bc62-4051-84c2-f32718c05386.v1))
+
 ## Preparation steps
 
  - Install Matlab 2023b in your machine
- - Download most recent version of code repository [here](https://data.4tu.nl/datasets/319168f0-bc62-4051-84c2-f32718c05386/1), e.g. by running `git clone` command shared at the bottom of the page
- - Download most recent release of [raw simulation data](https://data.4tu.nl/datasets/2479c468-624b-49b6-9e2e-63bd633c9bc2), unzip recordings.zip and move unzipped recordings folder to code repository main folder
- - Open installed Matlab version 
+ - Download the author's code repository [here](https://data.4tu.nl/datasets/319168f0-bc62-4051-84c2-f32718c05386/1), e.g. by running `git clone` command shared at the bottom of the webpage
+ - Download separate repository with [raw simulation data](https://data.4tu.nl/datasets/2479c468-624b-49b6-9e2e-63bd633c9bc2), unzip `recordings.zip` and move unzipped `recordings/` folder to the code repository's main folder, e.g., `mv recordings 1284fd2b-663c-4c0d-9af7-7dc1ca390945/`
+
 
 ## Reproduce Results
 
-Before starting reproducing the figures, make sure the repo main folder (./1284fd2b-663c-4c0d-9af7-7dc1ca390945) is displayed in Matlab's folder left panel.
+Before starting reproducing the figures, open Matlab 2023b and make sure the code repository's main folder (`./1284fd2b-663c-4c0d-9af7-7dc1ca390945/`) is displayed in Matlab's folder left panel.
 
 ### Figure 3
 
@@ -19,11 +26,14 @@ Run the following commands in the Matlab's terminal:
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 3' is the map of the environment and corresponds to Figure 3 in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The differences are:
+Three figures are created, of which 'Figure 3' is the map of the environment and corresponds to Figure 3 in the manuscript.
+Note that an earlier version of the software created the figure in the manuscript, which leads to the following differences:
 
- - The map is flipped around the Y-axis
+ - The Y-axis of the map is flipped (vertically)
  - The planned paths of drones are plotted.
  - The map is generated for T=1 instead of T=0 so the positions of drones are slightly different.
+
+For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
 
 ### Figure 4
 
@@ -155,11 +165,14 @@ Run the following commands in the Matlab's terminal:
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 3' is the map of the environment and corresponds to Figure 7 in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The differences are:
+Three figures are created, of which 'Figure 3' is the map of the environment and corresponds to Figure 7 in the manuscript.
+Note that an earlier version of the software created the figure in the manuscript, which leads to the following differences:
 
- - The map is flipped around the Y-axis
+ - The Y-axis of the map is flipped (vertically)
  - The planned paths of drones are plotted.
  - The map is generated for T=1 instead of T=0 so the positions of drones are slightly different.
+
+For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
 
 ### Figure 8
 
@@ -173,7 +186,10 @@ Figure 8 is a collection of 4 subfigures that are reproduced separately.
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Top Left in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
+Three figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Top Left in the manuscript.
+Note that an earlier version of the software created the figure in the manuscript, which leads to the following differences: the Y-axis of the map is flipped (vertically).
+
+For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
 
 **To reproduce Subfigure 8 Top Right:**
 
@@ -183,7 +199,10 @@ Figure 8 is a collection of 4 subfigures that are reproduced separately.
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Top Right in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
+Three figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Top Right in the manuscript.
+Note that an earlier version of the software created the figure in the manuscript, which leads to the following differences: the Y-axis of the map is flipped (vertically).
+
+For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
 
 **To reproduce Subfigure 8 Bottom Left:**
 
@@ -193,7 +212,10 @@ Figure 8 is a collection of 4 subfigures that are reproduced separately.
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Bottom Left in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
+Three figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Bottom Left in the manuscript.
+Note that an earlier version of the software created the figure in the manuscript, which leads to the following differences: the Y-axis of the map is flipped (vertically).
+
+For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
 
 **To reproduce Subfigure 8 Bottom Right:**
 
@@ -203,4 +225,7 @@ Figure 8 is a collection of 4 subfigures that are reproduced separately.
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Bottom Right in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
+Three figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Bottom Right in the manuscript. 
+Note that an earlier version of the software created the figure in the manuscript, which leads to the following differences: the Y-axis of the map is flipped (vertically).
+
+For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
