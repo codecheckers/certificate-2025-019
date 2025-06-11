@@ -3,7 +3,7 @@
  - Install Matlab 2023b in your machine
  - Download most recent version of code repository [here](https://data.4tu.nl/datasets/319168f0-bc62-4051-84c2-f32718c05386/1), e.g. by running `git clone` command shared at the bottom of the page
  - Download most recent release of [raw simulation data](https://data.4tu.nl/datasets/2479c468-624b-49b6-9e2e-63bd633c9bc2), unzip recordings.zip and move unzipped recordings folder to code repository main folder
- - Open installed Matlab version and naviga
+ - Open installed Matlab version 
 
 ## Reproduce Results
 
@@ -129,6 +129,21 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
  - These will generate a figure that corresponds to Subfigure 5 Right in the manuscript. Please use the "Rotation 3D" option you can find under the table 'Tools' to better visually check the comparison between the reproduced and published.
 
 ### Figure 6
+
+To reproduce Figure 6 you need access to additional Matlab functions that are at the date of this certificate's publication not available in the author's main repository but exclusively found in this Codecheck's repository (https://github.com/joaoxg/certificate-2025-XXX/tree/main/TO_COPY_TO_MAINREPO/Figure6). The author shared these functions with the Codechecker during the Codecheck process.
+
+To reproduce this figure, first copy/download the folder containing these functions into the authors's main repository, e.g.:
+
+```
+cp -r ./certificate-2025-XXX/TO_COPY_TO_MAINREPO/Figure6 ./1284fd2b-663c-4c0d-9af7-7dc1ca390945/
+```
+
+Then, in Matlab, make sure the repo main folder (./1284fd2b-663c-4c0d-9af7-7dc1ca390945) is displayed in Matlab's folder left panel and type in terminal:
+
+```Matlab
+addpath(genpath('.'))
+main2
+```
 
 ### Figure 7
 
