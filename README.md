@@ -89,7 +89,7 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
 
  - In 'Fuzzy Logic Designer: certanity', click on 'Export'(top panel) and then 'Export Fuzzy Inference System to Workspace'.
  
- ![Export](./supplementary_materials/Fuzzy Logic Designer - Export Fuzzy Inference Systems to Workspace.png)
+ ![Export](/supplementary_materials/Fuzzy%20Logic%20Designer%20-%20Export%20Fuzzy%20Inference%20Systems%20to%20Workspace.png)
 
  - A window appears requesting to select options to be exported. Select 'certanity' and click 'Export'.
 
