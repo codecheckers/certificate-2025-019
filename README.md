@@ -1,15 +1,15 @@
-### Preparation steps
+## Preparation steps
 
  - Install Matlab 2023b in your machine
  - Download most recent version of code repository [here](https://data.4tu.nl/datasets/319168f0-bc62-4051-84c2-f32718c05386/1), e.g. by running `git clone` command shared at the bottom of the page
  - Download most recent release of [raw simulation data](https://data.4tu.nl/datasets/2479c468-624b-49b6-9e2e-63bd633c9bc2), unzip recordings.zip and move unzipped recordings folder to code repository main folder
  - Open installed Matlab version and naviga
 
-### Reproduce Results
+## Reproduce Results
 
 Before starting reproducing the figures, make sure the repo main folder (./1284fd2b-663c-4c0d-9af7-7dc1ca390945) is displayed in Matlab's folder left panel.
 
-#### Figure 3
+### Figure 3
 
 Run the following commands in the Matlab's terminal:
 
@@ -25,11 +25,11 @@ Run the following commands in the Matlab's terminal:
  - The planned paths of drones are plotted.
  - The map is generated for T=1 instead of T=0 so the positions of drones are slightly different.
 
-#### Figure 4
+### Figure 4
 
 Figure 4 is a collection of 4 images (4A-D) that are reproduced separately.
 
-To reproduce Figure 4A:
+**To reproduce Subfigure 4A:**
 
 ```Matlab
    addpath(genpath('.'))
@@ -40,7 +40,7 @@ To reproduce Figure 4A:
    plot(x,y)
 ```
 
-To reproduce Figure 4B:
+**To reproduce Subfigure 4B:**
 
 ```Matlab
    addpath(genpath('.'))
@@ -51,7 +51,7 @@ To reproduce Figure 4B:
    plot(x,y)
 ```
 
-To reproduce Figure 4C:
+**To reproduce Subfigure 4C:**
 
 ```Matlab
    addpath(genpath('.'))
@@ -62,7 +62,7 @@ To reproduce Figure 4C:
    plot(x,y)
 ```
 
-To reproduce Figure 4D:
+**To reproduce Subfigure 4D:**
 
 ```Matlab
    addpath(genpath('.'))
@@ -74,21 +74,26 @@ To reproduce Figure 4D:
    plot(1-val)
 ```
 
-#### Figure 5
+### Figure 5
 
-Figure 5 is a collection of 2 images (Left and Right) that are reproduced separately.
+Figure 5 is a collection of 2 subfigures (Left and Right) that are reproduced separately.
 
-To reproduce figures 5 Left and Right we are going to use Matlab's Fuzzy Logic Designer tool.
+To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logic Designer tool.
 
-**To reproduce Figure 5 Left:**
+**To reproduce Subfigure 5 Left:**
 
  - Run `fuzzyLogicDesigner` in the terminal. Two windows should appear in your screen: one named 'Fuzzy Logic Designer: Untitled' and 'Fuzzy Logic Designer: Getting started'.
  - In 'Fuzzy Logic Designer: Getting started', 'Open' section (top left), do a Browse action to select file `.\fuzzy\FIS\certanity.fis`. The file is loaded into the 'Fuzzy Logic Designer: Untitled' window, whose name changes to 'Fuzzy Logic Designer: certanity'
+
+ ![Browse](./supplementary_materials/Fuzzy Logic Designer - Getting Started.png)
+
  - In 'Fuzzy Logic Designer: certanity', click on 'Export'(top panel) and then 'Export Fuzzy Inference System to Workspace'.
  
- ![Export](./Fuzzy%20Logic%20Designer%20-%20Export%20SImulation%20Results.png)
+ ![Export](./supplementary_materials/Fuzzy Logic Designer - Export Fuzzy Inference Systems to Workspace.png)
 
- - A window appears requesting to select options to be exported. Select 'certanity' and click 'Export'. 
+ - A window appears requesting to select options to be exported. Select 'certanity' and click 'Export'.
+
+ ![Select_certanity](./supplementary_materials/Fuzzy Logic Designer - Export Fuzzy Inference Systems to Workspace - Select certanity and Export.png)
 
  - In the Matlab terminal, run the following commands:
  
@@ -97,20 +102,22 @@ To reproduce figures 5 Left and Right we are going to use Matlab's Fuzzy Logic D
      surf(1-X,(Y+1)/2,1-Z)
   ```
 
-  - These will generate a figure that corresponds to Figure 5 Left in the manuscript. Please use the "Rotation 3D" option you can find under the table 'Tools' to better visually check the comparison between the reproduced and published.
+  - These will generate a figure that corresponds to Subfigure 5 Left in the manuscript. Please use the "Rotation 3D" option you can find under the table 'Tools' to better visually check the comparison between the reproduced and published.
 
-**To reproduce Figure 5 Right:**
+**To reproduce Subfigure 5 Right:**
 
  - Run `fuzzyLogicDesigner` in the terminal. Two windows should appear in your screen: one named 'Fuzzy Logic Designer: Untitled' and 'Fuzzy Logic Designer: Getting started'.
  - In 'Fuzzy Logic Designer: Getting started', 'Open' section (top left), do a Browse action to select file `.\fuzzy\FIS\measurment_information.fis`. The file is loaded into the 'Fuzzy Logic Designer: Untitled' window, whose name changes to 'Fuzzy Logic Designer: measurment_information'
 
-![]()
+ ![Browse](./supplementary_materials/Fuzzy&Logic&Designer&-&Getting&Started.png)
 
  - In 'Fuzzy Logic Designer: measurment_information', click on 'Export'(top panel) and then 'Export Fuzzy Inference System to Workspace'.
  
- ![Export](./Fuzzy%20Logic%20Designer%20-%20Export%20SImulation%20Results.png)
+ ![Export](./supplementary_materials/Fuzzy Logic Designer - Export Fuzzy Inference Systems to Workspace.png)
 
- - A window appears requesting to select options to be exported. Select 'measurment_information' and click 'Export'. 
+ - A window appears requesting to select options to be exported. Select 'measurment_information' and click 'Export'.
+
+ ![Select_measurment_information](./supplementary_materials/Fuzzy Logic Designer - Export Fuzzy Inference Systems to Workspace - Select measurment_information and Export.png) 
 
  - In the Matlab terminal, run the following commands:
  
@@ -119,11 +126,11 @@ To reproduce figures 5 Left and Right we are going to use Matlab's Fuzzy Logic D
      surf(X,Y,(Z+1)/2)
   ```
 
- - These will generate a figure that corresponds to Figure 5 Right in the manuscript. Please use the "Rotation 3D" option you can find under the table 'Tools' to better visually check the comparison between the reproduced and published.
+ - These will generate a figure that corresponds to Subfigure 5 Right in the manuscript. Please use the "Rotation 3D" option you can find under the table 'Tools' to better visually check the comparison between the reproduced and published.
 
-#### Figure 6
+### Figure 6
 
-#### Figure 7
+### Figure 7
 
 Run the following commands in the Matlab's terminal:
 
@@ -139,11 +146,11 @@ Run the following commands in the Matlab's terminal:
  - The planned paths of drones are plotted.
  - The map is generated for T=1 instead of T=0 so the positions of drones are slightly different.
 
-#### Figure 8
+### Figure 8
 
-Figure 8 is a collection of 4 images that are reproduced separately.
+Figure 8 is a collection of 4 subfigures that are reproduced separately.
 
-**To reproduce Figure 8 Top Left:**
+**To reproduce Subfigure 8 Top Left:**
 
 ```Matlab
    addpath(genpath('.'))
@@ -151,9 +158,9 @@ Figure 8 is a collection of 4 images that are reproduced separately.
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Figure 8 Top Left in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
+3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Top Left in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
 
-**To reproduce Figure 8 Top Right:**
+**To reproduce Subfigure 8 Top Right:**
 
 ```Matlab
    addpath(genpath('.'))
@@ -161,9 +168,9 @@ Figure 8 is a collection of 4 images that are reproduced separately.
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Figure 8 Top Right in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
+3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Top Right in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
 
-**To reproduce Figure 4 Bottom Left:**
+**To reproduce Subfigure 8 Bottom Left:**
 
 ```Matlab
    addpath(genpath('.'))
@@ -171,9 +178,9 @@ Figure 8 is a collection of 4 images that are reproduced separately.
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Figure 8 Bottom Left in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
+3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Bottom Left in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
 
-**To reproduce Figure 4D Bottom Right:**
+**To reproduce Subfigure 8 Bottom Right:**
 
 ```Matlab
    addpath(genpath('.'))
@@ -181,4 +188,4 @@ Figure 8 is a collection of 4 images that are reproduced separately.
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Figure 8 Bottom Right in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
+3 figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Bottom Right in the manuscript. Note that an earlier version of the software created the figure (in the paper) so it is slightly different. The one difference is the map is flipped around the Y-axis
