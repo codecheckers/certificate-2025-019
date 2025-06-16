@@ -10,6 +10,13 @@ Repository for CODECHECK certificate 2025-019.
  - Install Matlab 2023b in your machine
  - Download the author's code repository [here](https://data.4tu.nl/datasets/319168f0-bc62-4051-84c2-f32718c05386/1), e.g. by running `git clone` command shared at the bottom of the webpage
  - Download separate repository with [raw simulation data](https://data.4tu.nl/datasets/2479c468-624b-49b6-9e2e-63bd633c9bc2), unzip `recordings.zip` and move unzipped `recordings/` folder to the code repository's main folder, e.g., `mv recordings 1284fd2b-663c-4c0d-9af7-7dc1ca390945/`
+ - Download code to reproduce Figure 6 that is separately stored in the [Codecheck's Repository][https://github.com/joaoxg/certificate-2025-019/tree/main/COPY_TO_MAINREPO/Figure6], e.g. by cloning [Codecheck's Repository][https://github.com/joaoxg/certificate-2025-019] and copy the folder containing these functions `Figure6` into the main folder of the downloaded/cloned version of main code repository.
+
+To reproduce this figure, first copy/download the folder containing these functions into the authors's main repository, e.g.:
+
+```
+   cp -r ./certificate-2025-XXX/COPY_TO_MAINREPO/Figure6 ./1284fd2b-663c-4c0d-9af7-7dc1ca390945/
+```
 
 ## Reproduce Results
 
@@ -147,12 +154,12 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
 
 ### Figure 6
 
-To reproduce Figure 6 you need access to additional Matlab functions that are at the date of this certificate's publication not available in the author's main repository, but that can be found in this Codecheck's repository (https://github.com/joaoxg/certificate-2025-XXX/tree/main/TO_COPY_TO_MAINREPO/Figure6). The author shared these functions with the Codechecker during the Codecheck process.
+To reproduce Figure 6 you need access to additional Matlab functions that are at the date of this certificate's publication not available in the author's main repository, but that can be found in this Codecheck's repository (https://github.com/joaoxg/certificate-2025-XXX/tree/main/COPY_TO_MAINREPO/Figure6). The author shared these functions with the Codechecker during the Codecheck process.
 
 To reproduce this figure, first copy/download the folder containing these functions into the authors's main repository, e.g.:
 
 ```
-   cp -r ./certificate-2025-XXX/TO_COPY_TO_MAINREPO/Figure6 ./1284fd2b-663c-4c0d-9af7-7dc1ca390945/
+   cp -r ./certificate-2025-XXX/COPY_TO_MAINREPO/Figure6 ./1284fd2b-663c-4c0d-9af7-7dc1ca390945/
 ```
 
 Then, in Matlab, make sure the repo main folder (./1284fd2b-663c-4c0d-9af7-7dc1ca390945) is displayed in Matlab's folder left panel and type in the terminal:
@@ -204,7 +211,7 @@ For a better visual check comparing the generated and manuscript's figures, the 
 
 ```Matlab
    addpath(genpath('.'))
-   load('recordings/large/1_4f/env2011.mat')
+   load('recordings\large\4_2f\env2221.mat')
    plot_all_maps_environment(env_no_figures,0)
 ```
 
@@ -217,7 +224,7 @@ For a better visual check comparing the generated and manuscript's figures, the 
 
 ```Matlab
    addpath(genpath('.'))
-   load('recordings\large\4_2f\env2221.mat')
+   load('recordings/large/1_4f/env2011.mat')
    plot_all_maps_environment(env_no_figures,0)
 ```
 
