@@ -8,19 +8,13 @@ Repository for CODECHECK certificate 2025-019.
 ## Preparation steps
 
  - Install Matlab 2023b in your machine
- - Download the author's code repository [here](https://data.4tu.nl/datasets/319168f0-bc62-4051-84c2-f32718c05386/1), e.g. by running `git clone` command shared at the bottom of the webpage
- - Download separate repository with [raw simulation data](https://data.4tu.nl/datasets/2479c468-624b-49b6-9e2e-63bd633c9bc2), unzip `recordings.zip` and move unzipped `recordings/` folder to the code repository's main folder, e.g., `mv recordings 1284fd2b-663c-4c0d-9af7-7dc1ca390945/`
- - Download code to reproduce Figure 6 that is separately stored in the [Codecheck's Repository][https://github.com/joaoxg/certificate-2025-019/tree/main/COPY_TO_MAINREPO/Figure6], e.g. by cloning [Codecheck's Repository][https://github.com/joaoxg/certificate-2025-019] and copy the folder containing these functions `Figure6` into the main folder of the downloaded/cloned version of main code repository.
+ - Download the main code repository [here](https://data.4tu.nl/datasets/319168f0-bc62-4051-84c2-f32718c05386/1), e.g. by running `git clone` command shared at the bottom of the webpage
+ - Download separate repository with [raw simulation data](https://data.4tu.nl/datasets/2479c468-624b-49b6-9e2e-63bd633c9bc2), unzip `recordings.zip` and move unzipped `recordings/` folder to the main code repository's main folder, e.g., `mv recordings 1284fd2b-663c-4c0d-9af7-7dc1ca390945/`
+ - Download code to reproduce Figure 6 that is separately stored in the [CODECHECK Repository][https://github.com/joaoxg/certificate-2025-019/tree/main/COPY_TO_MAINREPO/Figure6], e.g. by cloning [CODECHECK Repository][https://github.com/joaoxg/certificate-2025-019] and copying the folder containing these functions `Figure6` into the main folder of the downloaded/cloned version of main code repository.
 
-To reproduce this figure, first copy/download the folder containing these functions into the authors's main repository, e.g.:
+## Reproducing Results
 
-```
-   cp -r ./certificate-2025-XXX/COPY_TO_MAINREPO/Figure6 ./1284fd2b-663c-4c0d-9af7-7dc1ca390945/
-```
-
-## Reproduce Results
-
-Before starting reproducing the figures, open Matlab 2023b and make sure the code repository's main folder (`./1284fd2b-663c-4c0d-9af7-7dc1ca390945/`) is displayed in Matlab's folder left panel.
+Before starting reproducing the figures, open Matlab 2023b and make sure the main code repository's main folder (`./1284fd2b-663c-4c0d-9af7-7dc1ca390945/`) is displayed in Matlab's folder left panel.
 
 ### Figure 3
 
@@ -32,14 +26,14 @@ Run the following commands in Matlab's terminal:
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-Three figures are created, of which 'Figure 3' is the map of the environment and corresponds to Figure 3 in the manuscript.
+Three figures are created, of which 'Figure 3' is the map of the environment that corresponds to Figure 3 in the manuscript.
 Note that an earlier version of the software created the figure in the manuscript, which leads to the following differences:
 
  - The Y-axis of the map is flipped (vertically)
  - The planned paths of drones are plotted.
  - The map is generated for T=1 instead of T=0 so the positions of drones are slightly different.
 
-For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
+For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip it vertically to the same orientation as the published figure.
 
 ### Figure 4
 
@@ -107,7 +101,7 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
 **To reproduce Subfigure 5 Left:**
 
  - Run `fuzzyLogicDesigner` in the terminal. Two windows should appear in your screen: one named 'Fuzzy Logic Designer: Untitled' and 'Fuzzy Logic Designer: Getting started'.
- - In 'Fuzzy Logic Designer: Getting started', do a Browse action (in the'Open' to left section) to select the file `.\fuzzy\FIS\certanity.fis`. The file is loaded into the 'Fuzzy Logic Designer: Untitled' window, whose name changes to 'Fuzzy Logic Designer: certanity'
+ - In 'Fuzzy Logic Designer: Getting started', do a Browse action (in the'Open' to left section) to select the file `.\fuzzy\FIS\certanity.fis`. The file is uploaded into the 'Fuzzy Logic Designer: Untitled' window, whose name changes to 'Fuzzy Logic Designer: certanity'
 
  ![Browse](/supplementary_materials/Fuzzy%20Logic%20Designer%20-%20Getting%20Started.png)
 
@@ -126,7 +120,7 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
      surf(1-X,(Y+1)/2,1-Z)
   ```
 
-  A figure is generated that corresponds to Subfigure 5 Left in the manuscript. Please use the "Rotation 3D" option under the header 'Tools' of the generated figure to better visually check the comparison between the reproduced and published figures.
+  A figure is generated that corresponds to Subfigure 5 Left in the manuscript. Please use the "Rotation 3D" option under the header 'Tools' of the generated figure to better visually check the match between the reproduced and published figures.
 
 **To reproduce Subfigure 5 Right:**
 
@@ -150,15 +144,16 @@ To reproduce Subfigures 5 Left and Right we are going to use Matlab's Fuzzy Logi
      surf(X,Y,(Z+1)/2)
   ```
 
- A figure is generated that corresponds to Subfigure 5 Right in the manuscript. Please use the "Rotation 3D" option under the header 'Tools' of the generated figure to better visually check the comparison between the reproduced and published figures.
+ A figure is generated that corresponds to Subfigure 5 Right in the manuscript. Please use the "Rotation 3D" option under the header 'Tools' of the generated figure to better visually check the matchn between the reproduced and published figures.
 
 ### Figure 6
 
-To reproduce Figure 6 you need access to additional Matlab functions that are at the date of this certificate's publication not available in the author's main repository, but that can be found in this Codecheck's repository (https://github.com/joaoxg/certificate-2025-XXX/tree/main/COPY_TO_MAINREPO/Figure6). The author shared these functions with the Codechecker during the Codecheck process.
+To reproduce Figure 6 you need access to additional Matlab code that is at the date of this certificate's publication not available in the main code repository, but that can be found in this CODECHECK repository (https://github.com/joaoxg/certificate-2025-XXX/tree/main/COPY_TO_MAINREPO/Figure6). The author shared the code with the codechecker during the CODECHECK process.
 
-To reproduce this figure, first copy/download the folder containing these functions into the authors's main repository, e.g.:
+To reproduce this figure, first clone/download the CODECHECK repository and copy the folder containing the code to main code repository's main folder, e.g.:
 
 ```
+   git clone git@github.com:joaoxg/certificate-2025-019.git
    cp -r ./certificate-2025-XXX/COPY_TO_MAINREPO/Figure6 ./1284fd2b-663c-4c0d-9af7-7dc1ca390945/
 ```
 
@@ -179,14 +174,14 @@ Run the following commands in the Matlab's terminal:
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-Three figures are created, of which 'Figure 3' is the map of the environment and corresponds to Figure 7 in the manuscript.
+Three figures are created, of which 'Figure 3' is the map of the environment that corresponds to Figure 7 in the manuscript.
 Note that an earlier version of the software created the figure in the manuscript, which leads to the following differences:
 
  - The Y-axis of the map is flipped (vertically)
  - The planned paths of drones are plotted.
  - The map is generated for T=1 instead of T=0 so the positions of drones are slightly different.
 
-For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
+For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip it vertically to the same orientation as the published figure.
 
 ### Figure 8
 
@@ -202,11 +197,6 @@ Run the following commands in the Matlab's terminal:
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-Three figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Top Left in the manuscript.
-Note that an earlier version of the software created the figure in the manuscript, which leads to the following difference: the Y-axis of the map is flipped (vertically).
-
-For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
-
 **To reproduce Subfigure 8 Top Right:**
 
 ```Matlab
@@ -214,11 +204,6 @@ For a better visual check comparing the generated and manuscript's figures, the 
    load('recordings\large\4_2f\env2221.mat')
    plot_all_maps_environment(env_no_figures,0)
 ```
-
-Three figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Top Right in the manuscript.
-Note that an earlier version of the software created the figure in the manuscript, which leads to the following difference: the Y-axis of the map is flipped (vertically).
-
-For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
 
 **To reproduce Subfigure 8 Bottom Left:**
 
@@ -228,11 +213,6 @@ For a better visual check comparing the generated and manuscript's figures, the 
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-Three figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Bottom Left in the manuscript.
-Note that an earlier version of the software created the figure in the manuscript, which leads to the following difference: the Y-axis of the map is flipped (vertically).
-
-For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
-
 **To reproduce Subfigure 8 Bottom Right:**
 
 ```Matlab
@@ -241,7 +221,7 @@ For a better visual check comparing the generated and manuscript's figures, the 
    plot_all_maps_environment(env_no_figures,0)
 ```
 
-Three figures are created, of which 'Figure 2' is the map of the environment and corresponds to Subfigure 8 Bottom Right in the manuscript. 
-Note that an earlier version of the software created the figure in the manuscript, which leads to the following difference: the Y-axis of the map is flipped (vertically).
+Each set of commands leads to three figures, of which 'Figure 2' is the map of the environment that corresponds to each of the four subfigures 8 in the manuscript. 
+Note that an earlier version of the software created the subfigures in the manuscript, which leads to the following difference: the Y-axis of the map is flipped (vertically).
 
-For a better visual check comparing the generated and manuscript's figures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated figure in order  to flip vertically the figure to the same orientation as the published figure.
+For a better visual check comparing the generated and manuscript's subfigures, the codechecker used the "Rotation 3D" option (under the header 'Tools') in the generated subfigure in order to flip it vertically to the same orientation as the published subfigure.
