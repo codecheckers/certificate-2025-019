@@ -8,6 +8,7 @@ paper:
       ORCID: 0000-0002-6756-9598
     - name: Anahita Jamshidnejad
       ORCID: 0000-0001-9151-2607
+  reference: https://doi.org/10.48550/arXiv.2503.21065
 
 manifest:
   - file: Figure3_first_case_study.jpg
