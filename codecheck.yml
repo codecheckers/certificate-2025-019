@@ -48,4 +48,4 @@ summary: >
 repository: https://github.com/codecheckers/certificate-2025-019
 check_time: "2025-06-11 10:00:00"
 certificate: 2025-019
-report: https://doi.org/
+report: https://doi.org/10.5281/zenodo.15771677
