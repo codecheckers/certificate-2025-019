@@ -10,7 +10,7 @@ Repository for CODECHECK certificate 2025-019.
  - Install Matlab 2023b in your machine
  - Download the main code repository [here](https://data.4tu.nl/datasets/319168f0-bc62-4051-84c2-f32718c05386/1), e.g. by running `git clone` command shared at the bottom of the webpage
  - Download separate repository with [raw simulation data](https://data.4tu.nl/datasets/2479c468-624b-49b6-9e2e-63bd633c9bc2), unzip `recordings.zip` and move unzipped `recordings/` folder to the main code repository's main folder, e.g., `mv recordings 1284fd2b-663c-4c0d-9af7-7dc1ca390945/`
- - Download code to reproduce Figure 6 that is separately stored in the [CODECHECK Repository][https://github.com/joaoxg/certificate-2025-019/tree/main/COPY_TO_MAINREPO/Figure6], e.g. by cloning [CODECHECK Repository][https://github.com/joaoxg/certificate-2025-019] and copying the folder containing these functions `Figure6` into the main folder of the downloaded/cloned version of main code repository.
+ - Download code to reproduce Figure 6 that is separately stored in the [CODECHECK Repository](https://github.com/joaoxg/certificate-2025-019/tree/main/COPY_TO_MAINREPO/Figure6), e.g. by cloning [CODECHECK Repository](https://github.com/codecheckers/certificate-2025-019) and copying the folder containing these functions `Figure6` into the main folder of the downloaded/cloned version of main code repository.
 
 ## Reproducing Results
 
